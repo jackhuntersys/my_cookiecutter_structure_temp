@@ -1,0 +1,31 @@
+[app]
+name = "{{ cookiecutter.project_name }}"
+version = "{{ cookiecutter.version }}"
+environment = "production"  # or development / staging
+
+[server]
+host = "0.0.0.0"
+port = 8000
+debug = false
+
+[database]
+engine = "postgresql"
+host = "localhost"
+port = 5432
+name = "mydb"
+user = "myuser"
+password = "mypassword"
+
+[logging]
+level = "INFO"
+format = "[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
+file = "logs/app.log"
+
+[features]
+enable_auth = true
+enable_cache = false
+beta_mode = false
+
+[api_keys]
+stripe = "YOUR_STRIPE_KEY"
+sendgrid = "YOUR_SENDGRID_KEY"

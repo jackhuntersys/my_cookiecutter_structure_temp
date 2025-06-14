@@ -1,0 +1,13 @@
+{
+  "project_slug": "ml_project_structure_temp",
+  "project_name": "My ML Project",
+  "author_name": "Jamshid Ganiev",
+  "email": "jrganiev@example.com",
+  "github_username": "jackhuntersys",
+  "version": "0.1.0", 
+  "python_version": "3.10",
+  "module_name": "mlpipeline",
+  "description": "A template for machine learning projects",
+  "license": "MIT"
+
+}
