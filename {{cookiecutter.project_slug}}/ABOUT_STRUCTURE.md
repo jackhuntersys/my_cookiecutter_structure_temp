@@ -7,6 +7,7 @@ cookiecutter-mytemplate/
     ├── README.md                               # 📘 Project introduction
     ├── Makefile                                # 🛠️ Command shortcuts (e.g. make train)
     ├── .gitignore                              # 🙈 Ignore files/folders
+    ├── setup.py                                # ⚙️ Dynamic setup logic
     │
     ├── src/                                    # 🧠 Main source code
     │   ├── __init__.py                         # Makes src a Python package
