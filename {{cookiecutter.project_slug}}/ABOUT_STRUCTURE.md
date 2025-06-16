@@ -9,18 +9,26 @@ cookiecutter-mytemplate/
     ├── .gitignore                              # 🙈 Ignore files/folders
     │
     ├── src/                                    # 🧠 Main source code
-    │   └── {{cookiecutter.module_name}}/
-    │       ├── __init__.py                     # Makes it a Python package
-    │       ├── config.py                       # Project configs and constants
-    │       ├── dataset.py                      # Data loading/generation scripts
-    │       ├── features.py                     # Feature engineering scripts
-    │       ├── exceptions.py                   # Custom exception classes
-    │       ├── logger.py                       # Centralized logger setup
-    │       ├── plots.py                        # Plotting/visualization functions
-    │       └── modeling/                       # Model training/inference
-    │           ├── __init__.py
-    │           ├── train.py
-    │           └── predict.py
+    │   ├── __init__.py                         # Makes src a Python package
+    │   │
+    │   │── data/
+    │   │   ├── dataset.py                      # Data loading/generation scripts 
+    │   │   ├── features.py                     # Feature engineering scripts   
+    │   │   └── preprocess.py                   # Data cleaning and transformation logic 
+    │   │
+    │   │── models/
+    │   │   ├── train.py                        # Model training scripts
+    │   │   ├── predict.py                      # Inference logic
+    │   │   └── evaluate.py                     # Metrics and model evaluation    
+    │   │ 
+    │   ├── utils/                              # Utilities
+    │   │   ├── exceptions.py                   # Custom exception classes
+    │   │   ├── logger.py                       # Centralized logger setup
+    │   │   └── config.py                       # Project configs and constants
+    │   │    
+    │   └── visualization/           
+    │       └── visualize.py                    # EDA, model results, charts, plots                     
+    │       
     │
     ├── data/                                   # 📂 Data folder
     │   ├── raw/                                # Unmodified source data
@@ -28,7 +36,7 @@ cookiecutter-mytemplate/
     │   └── external/                           # 3rd-party data
     │
     ├── notebooks/                              # 📒 Jupyter notebooks
-    │   └── 1.0-init-exploration.ipynb
+    │   └── 1.0-init-exploration.ipynb          # EDA notebooks
     │
     ├── models/                                 # 🧠 Trained models and checkpoints
     │
