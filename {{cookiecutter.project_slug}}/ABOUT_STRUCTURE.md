@@ -1,14 +1,27 @@
 cookiecutter-mytemplate/
 ├── cookiecutter.json
 └── {{cookiecutter.project_slug}}/              # 👈 Project root
-    ├── pyproject.yml                           # 📦 Modern build config (Setuptools/Poetry)
-    ├── setup.cfg                               # ⚙️ Config for tools (flake8, black, etc.)
-    ├── requirements.txt                        # 📜 Environment dependencies
-    ├── README.md                               # 📘 Project introduction
-    ├── Makefile                                # 🛠️ Command shortcuts (e.g. make train)
-    ├── .gitignore                              # 🙈 Ignore files/folders
-    ├── setup.py                                # ⚙️ Dynamic setup logic
+    
     │
+    ├── artifacts/                              # Auto-generated outputs (checkpoints, logs, intermediate files)
+    │   └── logs/                               # Logs for training, evaluation, debugging                
+    │
+    ├── data/                                   # 📂 Data folder
+    │   ├── raw/                                # Unmodified source data
+    │   ├── processed/                          # Final cleaned data for ML
+    │   └── external/                           # 3rd-party data
+    │
+    ├── docs/                                   # 📚 Documentation (MkDocs ready)
+    │
+    ├── models/                                 # 🧠 Trained models and checkpoints
+    │
+    ├── notebooks/                              # 📒 Jupyter notebooks
+    │   └── 1.0-init-exploration.ipynb          # EDA notebooks
+    │
+    ├── reports/                                # 📊 Generated reports
+    │   └── figures/                            # Plots and charts
+    │
+    │ 
     ├── src/                                    # 🧠 Main source code
     │   ├── __init__.py                         # Makes src a Python package
     │   │
@@ -28,20 +41,16 @@ cookiecutter-mytemplate/
     │   │   └── config.py                       # Project configs and constants
     │   │    
     │   └── visualization/           
-    │       └── visualize.py                    # EDA, model results, charts, plots                     
-    │       
+    │       └── visualize.py                    # EDA, model results, charts, plots   
     │
-    ├── data/                                   # 📂 Data folder
-    │   ├── raw/                                # Unmodified source data
-    │   ├── processed/                          # Final cleaned data for ML
-    │   └── external/                           # 3rd-party data
+    ├── tests/                                  # Unit and integration tests (pytest structure)
+    │   ├── __init__.py
+    │   └── test_sample.py
     │
-    ├── notebooks/                              # 📒 Jupyter notebooks
-    │   └── 1.0-init-exploration.ipynb          # EDA notebooks
-    │
-    ├── models/                                 # 🧠 Trained models and checkpoints
-    │
-    ├── reports/                                # 📊 Generated reports
-    │   └── figures/                            # Plots and charts
-    │
-    └── docs/                                   # 📚 Documentation (MkDocs ready)
+    ├── pyproject.yml                           # 📦 Modern build config (Setuptools/Poetry)
+    ├── setup.cfg                               # ⚙️ Config for tools (flake8, black, etc.)
+    ├── requirements.txt                        # 📜 Environment dependencies
+    ├── README.md                               # 📘 Project introduction
+    ├── Makefile                                # 🛠️ Command shortcuts (e.g. make train)
+    ├── .gitignore                              # 🙈 Ignore files/folders
+    └── setup.py                                # ⚙️ Dynamic setup logic
