@@ -1,13 +1,13 @@
 {
-  "project_slug": "ml_project_structure_temp",
-  "project_name": "My ML Project",
+  "project_slug": "ml_project_structure_temp  (Filesystem-Friendly)",
+  "project_name": "My ML Project  (Human-Readable)",
   "author_name": "Jamshid Ganiev",
-  "email": "jrganiev@example.com",
+  "email": "jrganiev@gmail.com",
   "github_username": "jackhuntersys",
   "version": "0.1.0", 
   "python_version": "3.10",
-  "module_name": "mlpipeline",
+  "module_name": "mlpipeline (Python package name)",
   "description": "A template for machine learning projects",
-  "license": "MIT"
+  "license": "MIT AND (Apache-2.0 OR BSD-2-Clause)"
 
 }
